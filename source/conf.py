@@ -3,8 +3,8 @@ import sys
 sys.path.append(os.path.abspath('.'))
 sys.path.append(os.path.abspath('..'))
 import sphinx_rtd_theme
-project = 'Sphinx-Tutorial'
-copyright = '2011-2023, , Mango System inc., CC-SA.'
+project = 'PINOGIO & gPocket 설명서'
+copyright = '2011-2023, , Mango System inc., CC-SA'
 author = 'Mango System inc'
 version = '1.0'
 release = '1.0'
