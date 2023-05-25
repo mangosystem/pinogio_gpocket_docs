@@ -53,3 +53,6 @@ epub_title = project
 epub_exclude_files = ['search.html']
 intersphinx_mapping = {'https://docs.python.org/': None}
 todo_include_todos = True
+
+def setup(app):
+    app.add_css_file('style.css')
