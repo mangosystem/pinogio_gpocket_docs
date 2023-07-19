@@ -130,25 +130,78 @@
 .. image:: images/uploadFileShape.png
     :alt: PINOGIO 데이터셋 - 파일선택 Shape
 
-아래는 파일을 Shape 선택하면 설정할 수 있는 옵션에 대한 설명입니다. ( ) 옵션 표시된 항목은 체크박스 선택 후 값을 변경할 수 있습니다. 값을 입력하지 않거나 체크박스 해제시 기본값이 적용됩니다.
+아래는 파일을 Shape 선택하면 설정할 수 있는 옵션에 대한 설명입니다. (옵션) 표시된 항목은 체크박스 선택 후 값을 변경할 수 있습니다. 값을 입력하지 않거나 체크박스 해제시 기본값이 적용됩니다.
 
 - **인코딩 (옵션) 선택란** 에서 파일에 맞는 인코딩을 선택합니다 기본값은 x-windows-949 입니다.
 - **원본 좌표계 (옵션) 선택란** 에서 데이터의 원본 좌표계를 선택합니다 기본값은 'EPSG:3857' 입니다.
-- **대상 좌표계 (옵션) 선택란**  에서 좌표변환에 사용할 좌표계를 선택합니다 기본값은 'EPSG:3857 입니다.
+- **대상 좌표계 (옵션) 선택란**  에서 좌표변환에 사용할 좌표계를 선택합니다 기본값은 'EPSG:3857' 입니다.
 
 옵션 설정이 완료되면 다음을 클릭합니다.
+
+**옵션 설정 - CSV**
+
+.. image:: images/uploadFileCSV.png
+    :alt: PINOGIO 데이터셋 - 파일선택 Shape
+
+아래는 파일을 CSV 선택하면 설정할 수 있는 옵션에 대한 설명입니다. X필드 Y필드는 좌표 필드 선택 옵션으로 정확히 입력하지 않으면 파일이 정상적으로 업로드 되지 않습니다. (옵션) 표시된 항목은 체크 박스 선택 후 값을 변경할 수 있습니다. 값을 입력하지 않거나 체크박스 해제시 기본값으로 적용됩니다.
+
+- **X 필드** 선택란에서 데이터의 X좌표 필드 값을 선택합니다. 기본값은 X로 데이터에 필드가 있을 경우 자동으로 선택됩니다.
+- **'Y 필드** 선택란에서 데이터의 Y좌표 필드 값을 선택합니다. 기본값은 Y로 데이터에 필드가 있을 경우 자동으로 선택됩니다.
+- **인코딩(옵션)** 선택란에서 파일에 맞는 인코딩을 선택합니다. 기본값은 windows-949입니다.
+- **원본 좌표계(옵션)** 선택란에서 데이터의 원본 좌표계를 선택합니다. 기본값은 3857 입니다.
+- **대상 좌표계(옵션)** 선택란에서 좌표변환에 사용할 좌표계를 선택합니다. 기본값은 3857 입니다.
+- **구분자(옵션)** 선택란에서 필드를 구분할 구분자를 선택합니다. 기본값은 컴마 입니다.
+- **필드행 번호(옵션)** 선택란에서 필드명으로 사용할 행을 선택합니다. 선택된 행번호가 필드명이 그 이후 행번호부터 데이터로 적용됩니다. 첫 번째 행번호는 0부터 시작됩니다 기본값은  0입니다.
+
+**옵션 설정 - 스프레드시트**
+
+
+.. warning::
+    여기서부터는 현재 작성중입니다.
+
+
 
 .. tip::
       Shape 데이터셋을 업로드 해볼 수 있는 샘플(Sample) 데이터셋을 다운로드하려면 아래의 링크를 클릭해주세요.
 
-      :download:`shape_sample.zip<files/shape_sample.zip>`
+      :download:`Sample_Shape.zip<files/Sample_Shape.zip>`
 
       - 아래의 옵션으로 설정 후 업로드 해주세요.
-      **원본 : UTF-8 / 인코딩(옵션) : UTF-8 / 원본 좌표계(옵션) : 3857 / 대상 좌표계(옵션) : 자유롭게 선택**
 
+      **원본 : UTF-8 / 인코딩(옵션) : UTF-8 / 원본 좌표계(옵션) : 4326 / 대상 좌표계(옵션) : 자유롭게 선택**
 
+      .. image:: images/uploadShapeTutorial1.png
+          :alt: PINOGIO 데이터셋 - 파일선택 Shape 튜토리얼1
 
+      .. image:: images/uploadShapeTutorial2.png
+          :alt: PINOGIO 데이터셋 - 파일선택 Shape 튜토리얼2
 
+      .. image:: images/uploadShapeTutorial3.png
+          :alt: PINOGIO 데이터셋 - 파일선택 Shape 튜토리얼3
+
+      .. image:: images/uploadShapeTutorial4.png
+          :alt: PINOGIO 데이터셋 - 파일선택 Shape 튜토리얼4
+
+.. tip::
+      CSV 데이터셋을 업로드 해볼 수 있는 샘플(Sample) 데이터셋을 다운로드하려면 아래의 링크를 클릭해주세요.
+
+      :download:`Sample_CSV.csv<files/Sample_CSV.csv>`
+
+      - 아래의 옵션으로 설정 후 업로드 해주세요.
+
+      **원본 : UTF-8 / x 필드 :  x_coord / y필드 : y_coord / 인코딩(옵션) : UTF-8 / 원본 좌표계(옵션) : 3857 / 대상 좌표계(옵션) : 자유롭게 선택 /  구분자(옵션) : 컴마 / 필드 행 번호(옵션) : 0**
+
+      .. image:: images/uploadCSVTutorial1.png
+          :alt: PINOGIO 데이터셋 - 파일선택 CSV 튜토리얼1
+
+      .. image:: images/uploadCSVTutorial2.png
+          :alt: PINOGIO 데이터셋 - 파일선택 CSV 튜토리얼2
+
+      .. image:: images/uploadCSVTutorial3.png
+          :alt: PINOGIO 데이터셋 - 파일선택 CSV 튜토리얼3
+
+      .. image:: images/uploadCSVTutorial4.png
+          :alt: PINOGIO 데이터셋 - 파일선택 CSV 튜토리얼4
 
 
 

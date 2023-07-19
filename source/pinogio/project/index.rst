@@ -150,7 +150,7 @@
 
 하단의 지도를 통해 프로젝트 내 데이터셋의 위치 중심점을 확인할 수 있습니다.
 
-.. image:: images/joinProjectWaiting.png
+.. image:: images/projectDashboard.png
     :alt: PINOGIO Studio 프로젝트 대시보드
 
 - 왼쪽 상단의 피노지오 스튜디오 로고를 클릭하면 프로젝트 목록 페이지로 이동합니다.
@@ -163,7 +163,7 @@
 
 프로젝트 설정의 일반 탭에서는 프로젝트의 제목, 소개, 공개 범위를 변경하거나 프로젝트를 삭제할 수 있습니다.
 
-.. image:: images/joinProjectWaiting.png
+.. image:: images/projectSetting.png
     :alt: PINOGIO Studio 프로젝트 일반 설정
 
 **제목**
@@ -225,7 +225,7 @@
 
 프로젝트 참여자의 이름과 아이디, 이메일을 조회하고 검색할 수 있는 페이지로, 프로젝트 소유자는 활동 정지, 강제 탈퇴로 사용자의 권한을 변경할 수 있습니다.
 
-.. image:: images/deleteProject.png
+.. image:: images/projectMember.png
     :alt: PINOGIO Studio 프로젝트 참여자 목록
 
 프로젝트 참여자의 **오른쪽점아이콘** 을 클릭하면 나오는 메뉴는 아래와 같습니다.
@@ -273,3 +273,6 @@
 - 해제를 클릭하면 다시 활동 가능한 상태로 변경됩니다.
 
 강제 탈퇴 탭에서는 강제 탈퇴 사용자 목록을 확인할 수 있습니다. **강제 탈퇴는 해제할 수 없습니다.**
+
+.. attention::
+    **강제 탈퇴는 해제할 수 없으니 사용에 신중해야 합니다.**
