@@ -54,6 +54,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../project/index.html">프로젝트</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">데이터셋</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id2">데이터셋 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">데이터셋 검색하기</a></li>
 </ul>
 </li>
 </ul>
@@ -263,7 +264,7 @@
 <li><p>선택한 파일명과 함께 파일의 인코딩 형식을 선택할 수 있습니다.</p></li>
 </ol>
 <img alt="PINOGIO 데이터셋 - 파일선택 예시" src="../../_images/uploadFileExample.png" />
-<p><strong>옵션 설정 - Shape</strong></p>
+<p><strong>2-1 옵션 설정 - Shape</strong></p>
 <img alt="PINOGIO 데이터셋 - 파일선택 Shape" src="../../_images/uploadFileShape.png" />
 <p>아래는 파일을 Shape 선택하면 설정할 수 있는 옵션에 대한 설명입니다. (옵션) 표시된 항목은 체크박스 선택 후 값을 변경할 수 있습니다. 값을 입력하지 않거나 체크박스 해제시 기본값이 적용됩니다.</p>
 <ul class="simple">
@@ -272,8 +273,8 @@
 <li><p><strong>대상 좌표계 (옵션) 선택란</strong>  에서 좌표변환에 사용할 좌표계를 선택합니다 기본값은 ‘EPSG:3857’ 입니다.</p></li>
 </ul>
 <p>옵션 설정이 완료되면 다음을 클릭합니다.</p>
-<p><strong>옵션 설정 - CSV</strong></p>
-<img alt="PINOGIO 데이터셋 - 파일선택 Shape" src="../../_images/uploadFileCSV.png" />
+<p><strong>2-2 옵션 설정 - CSV</strong></p>
+<img alt="PINOGIO 데이터셋 - 파일선택 CSV" src="../../_images/uploadFileCSV.png" />
 <p>아래는 파일을 CSV 선택하면 설정할 수 있는 옵션에 대한 설명입니다. X필드 Y필드는 좌표 필드 선택 옵션으로 정확히 입력하지 않으면 파일이 정상적으로 업로드 되지 않습니다. (옵션) 표시된 항목은 체크 박스 선택 후 값을 변경할 수 있습니다. 값을 입력하지 않거나 체크박스 해제시 기본값으로 적용됩니다.</p>
 <ul class="simple">
 <li><p><strong>X 필드</strong> 선택란에서 데이터의 X좌표 필드 값을 선택합니다. 기본값은 X로 데이터에 필드가 있을 경우 자동으로 선택됩니다.</p></li>
@@ -284,11 +285,59 @@
 <li><p><strong>구분자(옵션)</strong> 선택란에서 필드를 구분할 구분자를 선택합니다. 기본값은 컴마 입니다.</p></li>
 <li><p><strong>필드행 번호(옵션)</strong> 선택란에서 필드명으로 사용할 행을 선택합니다. 선택된 행번호가 필드명이 그 이후 행번호부터 데이터로 적용됩니다. 첫 번째 행번호는 0부터 시작됩니다 기본값은  0입니다.</p></li>
 </ul>
-<p><strong>옵션 설정 - 스프레드시트</strong></p>
-<div class="admonition warning">
-<p class="admonition-title">경고</p>
-<p>여기서부터는 현재 작성중입니다.</p>
-</div>
+<p><strong>2-3 옵션 설정 - 스프레드시트</strong></p>
+<img alt="PINOGIO 데이터셋 - 파일선택 스프레드시트" src="../../_images/uploadFileXLSX.png" />
+<p>아래는 스프레드시트(엑셀) 파일을 선택하면 설정할 수 있는 옵션에 대한 설명입니다 X필드, Y필드 좌표 필드 선택 옵션으로 정확히 입력하지 않으면 파일이 정상적으로 업로드 되지 않습니다. (옵션)
+표시된 항목은 체크 박스 선택 후 값을 변경할 수 있습니다. 값을 입력하지 않거나 체크박스 해제시 기본값으로 적용됩니다.</p>
+<ul class="simple">
+<li><p><strong>X 필드</strong> 선택란에서 데이터의 X좌표 필드 값을 선택합니다. 기본값은 X로 데이터에 X필드가 있을경우 자동으로 선택됩니다.</p></li>
+<li><p><strong>Y 필드</strong> 선택란에서 데이터의 Y좌표 필드 값을 선택합니다. 기본값은 Y로 데이터에 Y필드가 있을 경우 자동으로 선택됩니다.</p></li>
+<li><p><strong>인코딩(옵션)</strong> 선택란에서 파일에 맞는 인코딩을 선택합니다. 기본값은 x-windows-949입니다.</p></li>
+<li><p><strong>원본 좌표계 (옵션)</strong> 선택란에서 데이터의 원본 좌표계를 선택합니다. 기본값은 3857 입니다.</p></li>
+<li><p><strong>대상 좌표계 (옵션)</strong> 선택란에서 좌표변환에 사용할 좌표계를 선택합니다. 기본값은 3857 입니다.</p></li>
+<li><p><strong>필드행 번호(옵션)</strong> 선택란에서 필드명으로 사용할 행을 선택합니다. 선택된 행번호가 필드명이고 그 이후 행번호부터 데이터로 적용됩니다. 첫 번째 행번호는 0부터 시작됩니다. 기본값은 0입니다.</p></li>
+</ul>
+<p><strong>3. 메타데이터 설정</strong></p>
+<p>데이터셋을 소개할 수 있는 제목과 간략한 소개글, 그리고 공개범위를 선택하고 설정합니다.</p>
+<img alt="PINOGIO 데이터셋 - 메타데이터 설정" src="../../_images/metadataSetting.png" />
+<ol class="arabic simple">
+<li><p><strong>제목</strong> 필드 입력란에는 데이터셋의 제목을 입력합니다.</p></li>
+<li><p><strong>공개 범위</strong> 선택란에는 데이터셋의 공개 범위를 선택합니다. (공개 범위의 옵션에 대해서는 아래 표를 참조)</p></li>
+<li><p><strong>소개</strong> 필드 입력란에는 데이터셋에 대한 소개를 입력합니다.</p></li>
+<li><p><strong>gPocket 편집허용</strong> 은 이 데이터셋을 gPocket 애플리케이션에서 편집할 수 있도록 설정하는 기능입니다.</p></li>
+<li><p><strong>업로드</strong> 를 클릭하여 데이터셋을 업로드 합니다.</p></li>
+</ol>
+<p>데이터셋의 공개범위의 종류는 아래와 같습니다.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>옵션명</p></th>
+<th class="head"><p>특징</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>전체 공개</p></td>
+<td><p>모든 피노지오 사용자가 데이터셋에 접근</p></td>
+</tr>
+<tr class="row-odd"><td><p>팀 사용자에게 공개</p></td>
+<td><p>프로젝트 팀 사용자만 데이터셋에 접근 가능</p></td>
+</tr>
+<tr class="row-even"><td><p>비공개</p></td>
+<td><p>데이터셋 생성자만 데이터셋에 접근 가능</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>4. 업로드된 데이터셋 확인</strong></p>
+<p>파일 업로드가 완료되면 새로 만들어진 데이터셋 페이지로 이동됩니다. 지도에 데이터 위치와 입력한 메타데이터, 필드 정보를 확인하여 데이터가 잘 업로드 되었는지 확인합니다.</p>
+<img alt="PINOGIO 데이터셋 - 업로드 된 데이터셋 확인" src="../../_images/uploadCheck.png" />
+<p>지도위에서 도형을 클릭하면 선택한 도형의 속성정보를 팝업으로 확인할 수 있습니다.</p>
+<img alt="PINOGIO 데이터셋 - 도형 속성정보 확인" src="../../_images/featureInfo.png" />
+<p><strong>업로드된 데이터셋의 오류 사항</strong></p>
+<p>데이터 업로드시 잘못된 좌표필드(X필드, Y필드)를 선택하거나 데이터와 다른 좌표계를 선택했을 경우 데이터셋이 정상적으로 생성되지 않을 수 있습니다. 아래는 좌표 필드, 좌표계 설정 또는 데이터가 잘못되었을 때 발생되는 오류 사항에 대한 예시입니다.</p>
+<img alt="PINOGIO 데이터셋 - 업로드된 데이터셋의 오류 사항" src="../../_images/uploadDatasetError.png" />
 <div class="admonition tip">
 <p class="admonition-title">팁</p>
 <p>Shape 데이터셋을 업로드 해볼 수 있는 샘플(Sample) 데이터셋을 다운로드하려면 아래의 링크를 클릭해주세요.</p>
@@ -315,6 +364,111 @@
 <img alt="PINOGIO 데이터셋 - 파일선택 CSV 튜토리얼3" src="../../_images/uploadCSVTutorial3.png" />
 <img alt="PINOGIO 데이터셋 - 파일선택 CSV 튜토리얼4" src="../../_images/uploadCSVTutorial4.png" />
 </div>
+<div class="admonition tip">
+<p class="admonition-title">팁</p>
+<p>스프레드시트 데이터셋을 업로드 해볼 수 있는 샘플(Sample) 데이터셋을 다운로드하려면 아래의 링크를 클릭해주세요.</p>
+<p><a class="reference download internal" download="" href="../../_downloads/8eea150c35efc8f82c9e87518e783efd/Sample_XLSX.xlsx"><code class="xref download docutils literal notranslate"><span class="pre">Sample_XLSX.xlsx</span></code></a></p>
+<ul class="simple">
+<li><p>아래의 옵션으로 설정 후 업로드 해주세요.</p></li>
+</ul>
+<p><strong>원본 : UTF-8 / x 필드 :  x_coord / y필드 : y_coord / 인코딩(옵션) : UTF-8 / 원본 좌표계(옵션) : 3857 / 대상 좌표계(옵션) : 자유롭게 선택 /  구분자(옵션) : 컴마 / 필드 행 번호(옵션) : 0</strong></p>
+<img alt="PINOGIO 데이터셋 - 파일선택 스프레드시트 튜토리얼1" src="../../_images/uploadXLSXTutorial1.png" />
+<img alt="PINOGIO 데이터셋 - 파일선택 스프레드시트 튜토리얼2" src="../../_images/uploadXLSXTutorial2.png" />
+<img alt="PINOGIO 데이터셋 - 파일선택 스프레드시트 튜토리얼3" src="../../_images/uploadXLSXTutorial3.png" />
+<img alt="PINOGIO 데이터셋 - 파일선택 스프레드시트 튜토리얼4" src="../../_images/uploadXLSXTutorial4.png" />
+</div>
+<p><strong>비어있는 데이터셋 만들기</strong></p>
+<p>프로젝트 메뉴의 데이터셋을 클릭합니다. 우측 상단의 빈 데이터셋 만들기를 클릭하여 파일을 업로드 하지 않고서도 데이터셋을 만들 수 있습니다.</p>
+<div class="admonition important">
+<p class="admonition-title">중요</p>
+<p><strong>공간데이터 정보 설정 -&gt; 필드추가 -&gt; 메타데이터 설정 -&gt; 업로드</strong></p>
+</div>
+<p><strong>1. 공간데이터 정보 설정</strong></p>
+<img alt="PINOGIO 데이터셋 - 공간데이터 정보 설정" src="../../_images/spatialDataInfoSetting.png" />
+<ol class="arabic simple">
+<li><p>데이터셋 화면 오른쪽 상단의 <strong>새로운 데이터셋</strong> 을 클릭합니다.</p></li>
+<li><p>새로운 데이터셋 화면의 오른쪽 상단의 <strong>빈 데이터셋 만들기</strong> 를 클릭합니다.</p></li>
+<li><p><strong>지오메트리 유형</strong> 선택란에서 새로 만들 데이터셋의 지오메트리 유형을 선택합니다. (지오메트리 유형은 포인트, 라인, 폴리곤이 있습니다.)</p></li>
+<li><p><strong>영역</strong> 선택란에서 데이터셋의 영역을 선택합니다.( 현재 지도 영역은 우측의 지도 영역만큼을 데이터셋으로 사용하는 옵션이며, 영역 제한 없음을 선택하면 데이터셋의 영역을 제한하지 않습니다.)</p></li>
+</ol>
+<p><strong>2. 필드 추가</strong></p>
+<p>데이터셋의 필드를 추가하는 기능입니다. 파일을 업로드하여 생성하는 데이터셋은 파일에서 필드를 가져와 설정하지만, 빈 데이터셋을 만들게 되면 사용자가 필드를 직접 추가해야 합니다.</p>
+<img alt="PINOGIO 데이터셋 - 필드 추가" src="../../_images/addFields.png" />
+<ol class="arabic simple">
+<li><p>필드 추가화면 우측 상단의 <strong>추가</strong> 를 클릭합니다.</p></li>
+<li><p><strong>필드명</strong> 입력란에 필드 이름을 입력합니다.</p></li>
+<li><p><strong>필드별칭</strong> 입력란에 필드의 별칭을 입력합니다.</p></li>
+<li><p><strong>데이터 타입</strong> 선택란에서 필드의 데이터 타입을 선택합니다. (데이터 타입에 따른 입력방법은 아래에서 설명)</p></li>
+<li><p><strong>추가</strong> 를 클릭하여 입력한 필드를 추가합니다.</p></li>
+<li><p>원하는 필드가 모두 추가되었으면, <strong>다음</strong> 을 클릭하여 메타데이터 설정화면으로 넘어갑니다.</p></li>
+</ol>
+<p>다음은 필드 추가시 입력하는 항목의 종류와 특징에 대한 설명입니다.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>입력항목</p></th>
+<th class="head"><p>설명</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>필드명</p></td>
+<td><div class="line-block">
+<div class="line">최소 4 , 10 글자 이상 글자 이하</div>
+<div class="line">시작단어를 숫자로 입력 불가능</div>
+<div class="line">대문자 입력 불가능</div>
+<div class="line">특수문자는 밑줄문자(_)만 허용</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>필드별칭</p></td>
+<td><div class="line-block">
+<div class="line">20글자 이하</div>
+<div class="line">한글, 영문, 숫자, 공백 사용 가능</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>데이터 타입</p></td>
+<td><div class="line-block">
+<div class="line"><strong>1) 문자형</strong></div>
+<div class="line">- 문자형 값을 입력 받을 수 있도록 설정</div>
+<div class="line"><strong>2) 숫자형</strong></div>
+<div class="line">- 숫자형 값을 입력 받을 수 있도록 설정</div>
+<div class="line">- 정수형(INTEGER), 실수형(DOUBLE) 값 선택 가능</div>
+<div class="line">(하단 예시 참조)</div>
+<div class="line"><strong>3) 선택형</strong></div>
+<div class="line">- 사용자가 정의한 값을 입력받을 수 있도록 설정</div>
+<div class="line">- 옵션은 최대 10개 까지 추가 가능</div>
+<div class="line">- 옵션 1의 문자 열 최대 길이는 20자리</div>
+<div class="line">- 옵션 입력 후 엔터키를 입력하면 추가할 수 있음</div>
+<div class="line">- 하단에 추가된 옵션을 확인할 수 있고 아이 X 콘을 클릭하면 옵션이 삭제 됨</div>
+<div class="line">(하단 예시 참조)</div>
+<div class="line"><strong>4) 예/아니오형</strong></div>
+<div class="line">- 참/거짓 값을 입력 받을 수 있도록 설정</div>
+<div class="line"><strong>5) 날짜형</strong></div>
+<div class="line">- 날짜형식의 사용자 입력받고자 하는 값을 정할 수 있음</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p><strong>숫자형</strong> 예시</p>
+<a class="reference internal image-reference" href="../../_images/numberTypeExample.png"><img alt="PINOGIO 데이터셋 - 숫자형 예시" src="../../_images/numberTypeExample.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>선택형</strong> 예시</p>
+<a class="reference internal image-reference" href="../../_images/selectTypeExample.png"><img alt="PINOGIO 데이터셋 - 선택형 예시" src="../../_images/selectTypeExample.png" style="width: 500px;" /></a>
+</div>
+<p>이후 <strong>메타데이터 설정</strong> 과 <strong>업로드</strong> 절차는 이전과 <strong>파일로 데이터셋 생성하기 절차와 동일</strong> 합니다.</p>
+</section>
+<section id="id3">
+<h2>데이터셋 검색하기<a class="headerlink" href="#id3" title="이 제목에 대한 퍼머링크"></a></h2>
+<p>데이터셋은 한 사용자만 만드는 것이 아니라, 프로젝트에 참여중이며 데이터셋을 생성할 수 있는 권한이 있는 팀원 모두가 만들 수 있습니다. 많은 데이터 셋이 존재할 경우 특정 데이터셋을 손쉽게 찾을 수 있는 검색기능이 있습니다.</p>
 <div class="admonition warning">
 <p class="admonition-title">경고</p>
 <p>여기서부터는 현재 작성중입니다.</p>
