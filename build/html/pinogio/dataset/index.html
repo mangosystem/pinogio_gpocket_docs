@@ -49,12 +49,14 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">PINOGIO</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../index.html">소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduce/index.html">소개</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../start/index.html">시작</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project/index.html">프로젝트</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">데이터셋</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id2">데이터셋 만들기</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id3">데이터셋 검색하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">데이터셋 공유하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">데이터셋 정보보기 및 관리하기</a></li>
 </ul>
 </li>
 </ul>
@@ -304,7 +306,7 @@
 <li><p><strong>제목</strong> 필드 입력란에는 데이터셋의 제목을 입력합니다.</p></li>
 <li><p><strong>공개 범위</strong> 선택란에는 데이터셋의 공개 범위를 선택합니다. (공개 범위의 옵션에 대해서는 아래 표를 참조)</p></li>
 <li><p><strong>소개</strong> 필드 입력란에는 데이터셋에 대한 소개를 입력합니다.</p></li>
-<li><p><strong>gPocket 편집허용</strong> 은 이 데이터셋을 gPocket 애플리케이션에서 편집할 수 있도록 설정하는 기능입니다.</p></li>
+<li><p><strong>gPocket 편집허용</strong> 은 이 데이터셋을 gPocket 애플리케이션에서 편집할 수 있도록 설정하는 기능입니다. 기본값은 gPocket에서 편집 비허용 입니다.</p></li>
 <li><p><strong>업로드</strong> 를 클릭하여 데이터셋을 업로드 합니다.</p></li>
 </ol>
 <p>데이터셋의 공개범위의 종류는 아래와 같습니다.</p>
@@ -443,7 +445,7 @@
 <div class="line">- 옵션은 최대 10개 까지 추가 가능</div>
 <div class="line">- 옵션 1의 문자 열 최대 길이는 20자리</div>
 <div class="line">- 옵션 입력 후 엔터키를 입력하면 추가할 수 있음</div>
-<div class="line">- 하단에 추가된 옵션을 확인할 수 있고 아이 X 콘을 클릭하면 옵션이 삭제 됨</div>
+<div class="line">- 하단에 추가된 옵션을 확인할 수 있고 X 아이콘을 클릭하면 옵션이 삭제 됨</div>
 <div class="line">(하단 예시 참조)</div>
 <div class="line"><strong>4) 예/아니오형</strong></div>
 <div class="line">- 참/거짓 값을 입력 받을 수 있도록 설정</div>
@@ -469,6 +471,80 @@
 <section id="id3">
 <h2>데이터셋 검색하기<a class="headerlink" href="#id3" title="이 제목에 대한 퍼머링크"></a></h2>
 <p>데이터셋은 한 사용자만 만드는 것이 아니라, 프로젝트에 참여중이며 데이터셋을 생성할 수 있는 권한이 있는 팀원 모두가 만들 수 있습니다. 많은 데이터 셋이 존재할 경우 특정 데이터셋을 손쉽게 찾을 수 있는 검색기능이 있습니다.</p>
+<img alt="PINOGIO 데이터셋 - 검색하기" src="../../_images/datasetSearch.png" />
+<ol class="arabic simple">
+<li><p>데이터셋 목록 상단의 검색창에 검색할 데이터셋 이름을 입력합니다.</p></li>
+<li><p>엔터키를 입력하여 검색창에 입력된 데이터셋명을 포함한 데이터셋을 검색합니다.</p></li>
+</ol>
+</section>
+<section id="id4">
+<h2>데이터셋 공유하기<a class="headerlink" href="#id4" title="이 제목에 대한 퍼머링크"></a></h2>
+<p>생성되어있는 데이터셋을 공유하는 기능입니다. 데이터 셋 공유를 통해 다른 사용자가 데이터셋에 접근할 수 있습니다.
+다음의 내용은 데이터셋을 공유하는 방법에 대해 설명합니다.</p>
+<p><strong>데이터셋 공유</strong></p>
+<img alt="PINOGIO 데이터셋 - 공유하기" src="../../_images/datasetShare.png" />
+<ol class="arabic simple">
+<li><p>데이터셋 목록 오른쪽의 <strong>공유</strong> 를 클릭합니다.</p></li>
+<li><p>새로 생성된 데이터셋의 경우 기본적으로 공유하지 않음으로 설정되어 있습니다.</p></li>
+<li><p><strong>공유링크 만들기</strong> 를 클릭하여 데이터셋 공유를 위한 링크를 생성합니다.</p></li>
+</ol>
+<p><strong>데이터셋 공유권한 설정</strong></p>
+<img alt="PINOGIO 데이터셋 - 공유권한 설정" src="../../_images/datasetShareType.png" />
+<p>1. 공유링크 만들기가 완료되면 <strong>링크가 있는 모든 웹 사용자에게 공유 - 로그인 필요 없음</strong> 옵션이
+기본으로 설정이 됩니다.
+2. 공유옵션의 종류와 설명에 대해서는 아래 표 내용을 참고합니다.
+3. 아래에 표시된 공유링크를 확인하고, <strong>복사아이콘</strong> 을 클릭하여 클립보드에 복사할 수 있습니다.
+4. <strong>끄기 - 공유하지 않기</strong> 옵션이 선택될 경우 <strong>공유링크 제거</strong> 가 활성화 되고 클릭 시 공유를 제거할수 있습니다.
+5. <strong>링크가 있는 모든 웹 사용자에게 공유</strong> 또는 <strong>링크가 있는 로그인 사용자 옵션</strong> 이 선택될 경우 공유방법 변경을 클릭할 수 있습니다.
+6. 현재 선택된 옵션을 변경하지 않을 경우 클릭할 수 없도록 비활성화 상태가 유지됩니다</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>공유옵션</p></th>
+<th class="head"><p>특징</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>끄기 - 공유하지 않기</p></td>
+<td><p>현재 데이터셋을 공유하지 않습니다.</p></td>
+</tr>
+<tr class="row-odd"><td><p>링크가 있는 모든 웹 사용자에게 공유 - 로그인 필요 없음</p></td>
+<td><p>피노지오 로그인을 하지 않아도 데이터셋 접근이 가능합니다.</p></td>
+</tr>
+<tr class="row-even"><td><p>링크가 있는 로그인 사용자 – 로그인 필요</p></td>
+<td><p>피노지오 로그인을 해야 데이터셋 접근이 가능합니다</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id5">
+<h2>데이터셋 정보보기 및 관리하기<a class="headerlink" href="#id5" title="이 제목에 대한 퍼머링크"></a></h2>
+<p>생성된 데이터셋의 정보를 조회하는 기능입니다. 데이터 셋의 데이터가 지도에서는 어떻게 표현되는지, 메타데이터 정보는 어떤지, 데이터 필드는 어떻게 이루어져있는지 확인할 수 있습니다.</p>
+<p><strong>데이터셋 정보보기</strong></p>
+<p>데이터셋 목록에서 원하는 데이터셋을 클릭하면 데이터셋의 정보 페이지로 이동할 수 있습니다.</p>
+<img alt="PINOGIO 데이터셋 - 정보보기" src="../../_images/datasetInfo.png" />
+<p><strong>메타데이터 및 필드 정보</strong></p>
+<p>데이터셋 정보 페이지에서 메타데이터를 클릭하면 데이터셋의 메타데이터 정보를, 필드를 클릭하면 데이터셋의 필드 정보를 조회할 수 있습니다.</p>
+<img alt="PINOGIO 데이터셋 - 메타데이터 및 필드 정보" src="../../_images/datasetMetadataField.png" />
+<p><strong>설정 변경하기</strong></p>
+<p>데이터셋 정보 페이지에서 우측 상단의 <strong>톱니바퀴(메타데이터설정)</strong> 를 클릭하여 메타데이터 내용을 수정할 수 있습니다</p>
+<img alt="PINOGIO 데이터셋 - 설정 변경하기" src="../../_images/datasetSettingModify.png" />
+<p><strong>필드 관리하기</strong></p>
+<p>데이터셋 정보 페이지에서 우측 상단의 필드 수정을 클릭하여 메타데이터의 필드를 추가하거나 수정, 삭제할 수 있습니다.</p>
+<img alt="PINOGIO 데이터셋 - 필드 관리하기" src="../../_images/datasetFieldManage.png" />
+<ol class="arabic simple">
+<li><p>필드를 수정하려면 수정할 필드 오른쪽의 연필모양아이콘을 클릭합니다.</p></li>
+<li><p>필드를 삭제하려면 수정아이콘 옆의 삭제아이콘을 클릭합니다.</p></li>
+<li><p>오른쪽 그림처럼 필드 내용을 수정할 수 있습니다. (필드명과 데이터 타입은 수정이 불가능합니다.)</p></li>
+<li><p>변경을 클릭하여 수정된 내용을 저장합니다.</p></li>
+</ol>
+<p>새로운 필드를 추가할 수 있습니다. 필드 추가 방법은 새로운 데이터셋 만들기의 비어있는 데이터셋
+필드 추가 내용과 같습니다</p>
+<img alt="PINOGIO 데이터셋 - 필드 관리하기" src="../../_images/datasetFieldAdd.png" />
+<p><strong>데이터셋 삭제하기</strong></p>
 <div class="admonition warning">
 <p class="admonition-title">경고</p>
 <p>여기서부터는 현재 작성중입니다.</p>

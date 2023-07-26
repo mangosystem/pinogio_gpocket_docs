@@ -29,7 +29,7 @@ PINOGIO & gPocket 설명서에 오신것을 환영합니다!
     :caption:  PINOGIO
     :maxdepth: 3
 
-    pinogio/index
+    pinogio/introduce/index
     pinogio/start/index
     pinogio/project/index
     pinogio/dataset/index
