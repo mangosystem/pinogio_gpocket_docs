@@ -21,7 +21,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="색인" href="../../genindex.html" />
     <link rel="search" title="검색" href="../../search.html" />
-    <link rel="next" title="gPocket 소개" href="../../gpocket/index.html" />
+    <link rel="next" title="레이어" href="../layer/index.html" />
     <link rel="prev" title="프로젝트" href="../project/index.html" /> 
 </head>
 
@@ -57,8 +57,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#id3">데이터셋 검색하기</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id4">데이터셋 공유하기</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id5">데이터셋 정보보기 및 관리하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">데이터셋 편집하기</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../layer/index.html">레이어</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">gPocket</span></p>
 <ul>
@@ -545,10 +547,92 @@
 필드 추가 내용과 같습니다</p>
 <img alt="PINOGIO 데이터셋 - 필드 관리하기" src="../../_images/datasetFieldAdd.png" />
 <p><strong>데이터셋 삭제하기</strong></p>
-<div class="admonition warning">
-<p class="admonition-title">경고</p>
-<p>여기서부터는 현재 작성중입니다.</p>
-</div>
+<p>생성되어있는 데이터셋이 불필요할 경우에는 데이터셋을 삭제해야 합니다.</p>
+<img alt="PINOGIO 데이터셋 - 삭제하기" src="../../_images/deleteDataset.png" />
+<ol class="arabic simple">
+<li><p>데이터셋 정보 페이지에서 우측 상단의 데이터셋 삭제를 클릭합니다.</p></li>
+<li><p>데이터셋 삭제페이지에서 삭제 확인을 위해 데이터셋 이름을 정확히 입력합니다.</p></li>
+<li><p>데이터셋 삭제버튼이 활성화되면, 데이터셋 삭제를 클릭하여 데이터셋을 삭제합니다.</p></li>
+</ol>
+<p><strong>데이터셋 다운로드</strong></p>
+<p>피노지오 데이터셋에 업로드되어있는 데이터를 다운로드 해야 할 때도 있습니다. 피노지오에서는 데이터셋 다운로드 기능을 제공합니다. 데이터셋 정보 페이지 우측 상단의 <strong>다운로드아이콘</strong> 을 클릭하면 데이터셋 파일을 다운로드 받을 수 있습니다. 데이터셋 파일은 Shapefile(zip)파일로 제공됩니다.</p>
+<img alt="PINOGIO 데이터셋 - 다운로드" src="../../_images/downloadDataset.png" />
+</section>
+<section id="id6">
+<h2>데이터셋 편집하기<a class="headerlink" href="#id6" title="이 제목에 대한 퍼머링크"></a></h2>
+<img alt="PINOGIO 데이터셋 - 편집하기" src="../../_images/editDataset.png" />
+<p><strong>주소검색</strong></p>
+<p>주소를 검색하여 지도의 위치를 이동하는 기능입니다. 다음과 같은 과정으로 진행합니다.</p>
+<ol class="arabic simple">
+<li><p>오른쪽 상단에 위치한 주소 검색 창에 정확한 도로명 주소를 입력합니다.</p></li>
+<li><p>입력이 완료되면 엔터키를 눌러 주소를 검색합니다.</p></li>
+</ol>
+<img alt="PINOGIO 데이터셋 - 주소검색" src="../../_images/findAddress.png" />
+<p><strong>속성정보 변경하기</strong></p>
+<p>선택한 피처(데이터)의 속성정보를 수정하는 기능입니다. 각 속성정보의 타입은 필드의 타입과 동일합니다. 다음과 같은 과정으로 진행합니다.</p>
+<img alt="PINOGIO 데이터셋 - 속성정보 변경하기" src="../../_images/attributeEdit.png" />
+<ol class="arabic simple">
+<li><p>속성을 편집할 피처(데이터)를 지도상에서 마우스 왼쪽을 클릭하여 선택합니다.</p></li>
+<li><p>왼쪽 화면에 나타난 피처(데이터)의 정보를 수정합니다.</p></li>
+<li><p>상단의 <strong>저장 아이콘(디스켓 아이콘)</strong> 을 클릭하여 저장합니다.</p></li>
+</ol>
+<p><strong>도형 편집하기</strong></p>
+<p>도형을 편집하는 기능입니다. PINOGIO에서 도형을 편집하는 기능은 데이터의 도형 타입에 따라 달라집니다.  아래는 PINOGIO에서 제공하는 도형 타입별 편집 기능 목록입니다.</p>
+<img alt="PINOGIO 데이터셋 - 도형 편집하기" src="../../_images/geometryEdit.png" />
+<p><strong>1. 포인트 데이터셋 도형 편집하기</strong></p>
+<p>선택한 포인트 타입의 피처(데이터)를 편집합니다. 편집하기 위해서는 지도가 일정 레벨 이상 확대되어야 합니다. 다음과 같은 과정으로 진행합니다.</p>
+<ol class="arabic simple">
+<li><p>지도를 오른쪽 상단의 <strong>‘편집하려면 확대하세요’ 메시지가 없어질 때까지 확대</strong> 합니다.</p></li>
+<li><p>편집할 피처(데이터)를 마우스 오른쪽을 클릭합니다.</p></li>
+<li><p>편집할 종류를 클릭하고 편집을 진행합니다.</p></li>
+</ol>
+<p>포인트 데이터셋 도형 편집기능의 종류는 아래와 같습니다.</p>
+<ul class="simple">
+<li><p>수정 : 피처(데이터)의 도형의 노드 또는 라인을 드래그하여 수정합니다. 수정기능에는 스냅 기능을 지원합니다.</p></li>
+<li><p>삭제 : 피처(데이터)를 삭제합니다.</p></li>
+</ul>
+<p><strong>2. 라인 데이터셋 도형 편집하기</strong></p>
+<p>선택한 라인 타입의 피처(데이터) 를 편집합니다. 편집하기 위해서는 지도가 일정 레벨 이상 확대되어야 합니다. 다음과 같은 과정으로 진행합니다.</p>
+<ol class="arabic simple">
+<li><p>지도를 오른쪽 상단의 <strong>‘편집하려면 확대하세요’ 메시지가 없어질 때까지 확대</strong> 합니다.</p></li>
+<li><p>편집할 피처(데이터)를 마우스 오른쪽을 클릭합니다.</p></li>
+<li><p>편집할 종류를 클릭하고 편집을 진행합니다.</p></li>
+</ol>
+<p>라인 데이터셋 도형 편집기능의 종류는 아래와 같습니다.</p>
+<ul class="simple">
+<li><p>단순화 : 라인 위 노드의 숫자를 줄여 라인을 단순화 합니다.</p></li>
+<li><p>이동 : 피처(데이터)를 원하는 지점으로 드래그하여 이동합니다.</p></li>
+<li><p>회전 : 피처(데이터)를 드래그하여 회전합니다.</p></li>
+<li><p>짧은축 반전 : 피처(데이터)의 짧은 축을 기준으로 도형을 반전합니다.</p></li>
+<li><p>긴축 반전 : 피처(데이터)의 긴 축을 기준으로 도형을 반전합니다.</p></li>
+<li><p>직선화 : 시작점과 끝을 기준으로 피처(데이터)를 직선화합니다.</p></li>
+<li><p>병합 : 두 개 이상의 연결되어 있는 피처(데이터)를 선택한 후 하나의 라인으로 병합합니다. 이 때 두 개의 피처(데이터)는 끝점이 연결되어 있어야 합니다.</p></li>
+<li><p>수정 : 피처(데이터)의 도형의 노드 또는 라인을 드래그하여 수정합니다. 수정기능에는 스냅 기능을 지원합니다.</p></li>
+<li><p>삭제 : 피처(데이터)를 삭제합니다.</p></li>
+</ul>
+<p><strong>3. 폴리곤 데이터셋 도형 편집하기</strong></p>
+<p>선택한 라인 타입의 피처(데이터) 를 편집합니다. 편집하기 위해서는 지도가 일정 레벨 이상 확대되어야 합니다. 다음과 같은 과정으로 진행합니다.</p>
+<ol class="arabic simple">
+<li><p>지도를 오른쪽 상단의 <strong>‘편집하려면 확대하세요’ 메시지가 없어질 때까지 확대</strong> 합니다.</p></li>
+<li><p>편집할 피처(데이터)를 마우스 오른쪽을 클릭합니다.</p></li>
+<li><p>편집할 종류를 클릭하고 편집을 진행합니다.</p></li>
+</ol>
+<p>폴리곤 데이터셋 도형 편집기능의 종류는 아래와 같습니다.</p>
+<ul class="simple">
+<li><p>단순화 : 폴리곤의 노드의 숫자를 줄여 폴리곤을 단순화 합니다.</p></li>
+<li><p>이동 : 피처(데이터)를 원하는 지점으로 드래그하여 이동합니다.</p></li>
+<li><p>회전 : 피처(데이터)를 드래그하여 회전합니다.</p></li>
+<li><p>짧은축 반전 : 피처(데이터)의 짧은 축을 기준으로 도형을 반전합니다.</p></li>
+<li><p>긴축 반전 : 피처(데이터)의 긴 축을 기준으로 도형을 반전합니다.</p></li>
+<li><p>수정 : 피처(데이터)의 도형의 노드 또는 라인을 드래그하여 수정합니다. 수정기능에는 스냅 기능을 지원합니다.</p></li>
+<li><p>삭제 : 피처(데이터)를 삭제합니다.</p></li>
+</ul>
+<p><strong>편집 취소하기</strong></p>
+<p>피처(데이터)를 편집 및 추가한 후 오른쪽 상단의 <strong>취소아이콘</strong> 을 클릭하여 편집을 취소할 수 있습니다. 편집을 취소하면 저장한 후 또는 처음 상태로 돌아갑니다. 편집을 취소하면 다시 되돌리지 못합니다.</p>
+<p><strong>편집 저장하기</strong></p>
+<p>피처(데이터)를 편집한 후 오른쪽 상단의 저장아이콘을 클릭하여 편집 내용을 저장합니다.</p>
+<p><strong>새로운 도형 추가하기</strong></p>
+<p>오른쪽 상단의 <strong>더하기아이콘</strong> 을 클릭한 후 지도상에 피처(데이터)를를 그려 추가합니다. 그리기 도형의 타입은 데이터셋의 도형 타입에 따라 변경됩니다.</p>
 </section>
 </section>
 
@@ -557,7 +641,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../project/index.html" class="btn btn-neutral float-left" title="프로젝트" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../gpocket/index.html" class="btn btn-neutral float-right" title="gPocket 소개" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../layer/index.html" class="btn btn-neutral float-right" title="레이어" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

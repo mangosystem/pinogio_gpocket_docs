@@ -33,6 +33,7 @@ PINOGIO & gPocket 설명서에 오신것을 환영합니다!
     pinogio/start/index
     pinogio/project/index
     pinogio/dataset/index
+    pinogio/layer/index
 
 
 .. toctree::
